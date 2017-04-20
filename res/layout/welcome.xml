@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <TextView
+        android:id="@+welcome/textTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dip"
+        android:gravity="center_horizontal"
+        android:text="Agenda de Medicamentos"
+        android:textColor="@color/Black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+welcome/textMensagem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:gravity="center_horizontal"
+        android:text="@string/mensagem_boas_vindas"
+        android:textColor="@color/Black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+welcome/continuar"
+        style="@style/ButtonText"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@xml/button_blue"
+        android:text="Continuar" />
+
+</LinearLayout>

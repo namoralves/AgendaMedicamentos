@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:text="Cadastro de Usuário"
+            android:textColor="@color/Black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+usuario_cadastre/form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Nome:"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+usuario_cadastre/text_nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="Nascimento:"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+usuario_cadastre/btn_data_nascimento"
+                    style="@style/ButtonText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@xml/button_blue"
+                    android:text="DATA" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingTop="14dip"
+                    android:text="Sexo:"
+                    android:textColor="@color/Black"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+usuario_cadastre/radiogroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+usuario_cadastre/radio_masculino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Masculino"
+                        android:textColor="@color/Black"
+                        android:textSize="16sp" >
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+usuario_cadastre/radio_feminino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Feminino"
+                        android:textColor="@color/Black"
+                        android:textSize="16sp" >
+                    </RadioButton>
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+usuario_cadastre/btn_cadastrar"
+                style="@style/ButtonText"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@xml/button_blue"
+                android:text="Cadastrar" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

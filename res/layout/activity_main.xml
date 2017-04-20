@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+activity_main/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dip" >
+
+        <LinearLayout
+            android:id="@+activity_main/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+activity_main/imgMedicalIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dip"
+                android:src="@drawable/medical_agenda" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+activity_main/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+activity_main/btnCadastre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:background="@xml/button_blue"
+                android:text="Cadastrar Medicamentos"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+activity_main/btnAgenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="20dp"
+                android:background="@xml/button_blue"
+                android:text="Agenda de Medicamentos"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+activity_main/btnConfig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="20dp"
+                android:background="@xml/button_blue"
+                android:text="Configurações"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+activity_main/btnExit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="20dp"
+                android:background="@xml/button_blue"
+                android:text="Sair"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
